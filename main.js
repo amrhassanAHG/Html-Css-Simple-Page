@@ -1,11 +1,11 @@
 const mobileBtn = document.getElementById('mobile-cta')
-      mobileBtnExit = document.getElementById('mobile-exit-cta')
-      nav = document.querySelector('nav')
+              nav = document.querySelector('nav')
+              mobileBtnExit = document.getElementById('mobile-exit');
 
-mobileBtn.addEventListener('click', (e)=>{
-    nav.style.display='block'
+mobileBtn.addEventListener('click', () => {
+    nav.classList.add('menu-btn');
 })
 
-mobileBtnExit.addEventListener('click', (e)=>{
-    nav.style.display='none'
+mobileBtnExit.addEventListener('click', () => {
+    nav.classList.remove('menu-btn');
 })
